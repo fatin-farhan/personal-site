@@ -1,16 +1,26 @@
 import { useMemo, useState } from "react";
-import { User, FlaskConical } from "lucide-react";
+import { User, FlaskConical,FolderOpen  } from "lucide-react";
 import NavLink from "./components/NavLink";
 import PersonalPage from "./pages/PersonalPage";
 import ResearchPage from "./pages/ResearchPage";
+import ProjectPage from "./pages/ProjectPage";
 import { personalInfo } from "./data/siteData";
 
 export default function App() {
   const [page, setPage] = useState("personal");
 
-  const pageTitle = useMemo(() => {
-    return page === "personal" ? "Personal" : "Research";
-  }, [page]);
+  const renderPage = () => {
+  switch (page) {
+    case "research":
+      return <ResearchPage />;
+    case "project":
+      return <ProjectPage />;
+    default:
+      return <PersonalPage />;
+  }
+};
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100 text-slate-900">
@@ -21,7 +31,6 @@ export default function App() {
               <p className="text-lg font-semibold tracking-tight text-slate-950">
                 {personalInfo.name}
               </p>
-              <p className="text-sm text-slate-600">Personal website</p>
             </div>
 
             <nav className="flex flex-wrap gap-2">
@@ -37,21 +46,18 @@ export default function App() {
                 icon={FlaskConical}
                 label="Research"
               />
+              <NavLink
+                active={page === "project"}
+                onClick={() => setPage("project")}
+                icon={FolderOpen }
+                label="Project"
+              />
             </nav>
           </div>
         </header>
 
         <main>
-          <div className="mb-8">
-            <p className="text-sm uppercase tracking-[0.25em] text-slate-500">
-              Current page
-            </p>
-            <h1 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
-              {pageTitle}
-            </h1>
-          </div>
-
-          {page === "personal" ? <PersonalPage /> : <ResearchPage />}
+          {renderPage()}
         </main>
       </div>
     </div>

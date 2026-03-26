@@ -13,10 +13,12 @@ export default function PersonalPage() {
           transition={{ duration: 0.45 }}
           className="space-y-6"
         >
+          {/*
           <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-sm text-slate-600 shadow-sm">
             <User className="h-4 w-4" />
             Personal
           </div>
+          */}
 
           <div className="space-y-4">
             <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-6xl">

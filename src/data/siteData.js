@@ -1,15 +1,15 @@
 export const personalInfo = {
-  name: "Your Name",
+  name: "Md Tasnim Farhan Fatin",
   role: "Researcher · Builder · Lifelong Learner",
   tagline:
-    "I explore ideas at the intersection of research, technology, and thoughtful design.",
-  bio: "I'm a researcher and creator interested in turning complex ideas into clear, useful work. This site is a simple home for who I am, what I study, and what I'm building next.",
-  email: "you@example.com",
+    "Tagline.",
+  bio: "Bio.",
+  email: "tasnimfatin@outlook.com",
   links: [
-    { label: "Google Scholar", href: "#" },
-    { label: "GitHub", href: "#" },
-    { label: "LinkedIn", href: "#" },
-    { label: "CV", href: "#" },
+    { label: "Google Scholar", href: "https://scholar.google.com/#" },
+    { label: "GitHub", href: "https://github.com/fatin-farhan" },
+    { label: "LinkedIn", href: "https://bd.linkedin.com/in/md-tasnim-farhan-fatin-12041b280" },
+    { label: "CV", href: "https://drive.google.com/file/d/10zr6JBfXT-00Vo4kamdGPLKkt8U9brao/view?usp=sharing" },
   ],
   highlights: [
     "Research focus on your field or long-term interests",
@@ -59,6 +59,35 @@ export const research = {
       summary:
         "Briefly describe what you are currently exploring and what questions remain open.",
       href: "#",
+    },
+  ],
+};
+
+export const project = {
+  publications: [
+    {
+      title: "IoT-based Smart Plant Waterer System (2023)",
+      description: "Implemented a real-time monitoring system for video, temperature, humidity and rain updates. Maintained a database for tracking records.",
+      techniques:"Arduino, ESP32-CAM, Javascript, PHP",
+      href: "https://drive.google.com/file/d/1rs31bMyBvEHhiCscYW7xsxoOtSpWha2q/view",
+    },
+    {
+      title: "Bangla Sign Language Detection (2022)",
+      description: "Built a hand glove with flex sensors to translate sign language into electrical signals. Translated the signals into Bangla text using neural networks.",
+      techniques:"Arduino, Python",
+      href: "https://drive.google.com/file/d/1Bje8q-uVJ4qb6taLapWolqTH5CDG4d6i/view",
+    },
+    {
+      title: "4-Bit Arithmetic Logic Unit of a CPU in Bread Board (2022)",
+      description: "Built a hardware prototype of a 4-bit Arithmetic Logic Unit (ALU) on a breadboard using ICs. The circuit handled basic logical and arithmetic operations and output on a 7-segment display.",
+      techniques:"Logic Gates, Multiplexers",
+      href: "https://drive.google.com/file/d/1w_j5QRGRB_1Q19EVlMj_MeKY8p9vgND9/view",
+    },
+    {
+      title: "Electricity Load Forecasting and Disaggregation (2021)",
+      description: "Explored different neural network models for real-time non-intrusive load monitoring (NILM). The effectiveness of each model was compared using metrics such as MSE, MAE, RE, and F1 Score.",
+      techniques:"Python",
+      href: "https://drive.google.com/file/d/1z68jv703eNN_WPG7G2dhfnePOG5ZtTLN/view",
     },
   ],
 };
