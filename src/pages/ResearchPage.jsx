@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FlaskConical, BookOpen, ExternalLink } from "lucide-react";
+import { BookOpen, ExternalLink } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { research } from "../data/siteData";
 

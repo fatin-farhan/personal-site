@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import {  useState } from "react";
 import { User, FlaskConical,FolderOpen  } from "lucide-react";
 import NavLink from "./components/NavLink";
 import PersonalPage from "./pages/PersonalPage";

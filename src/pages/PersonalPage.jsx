@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { User, Mail, ExternalLink, GraduationCap, FileText, ArrowRight } from "lucide-react";
+import { Mail, ExternalLink, GraduationCap, FileText, ArrowRight } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { personalInfo } from "../data/siteData";
 import CPS2RL from "../assets/cps2rl.png";
