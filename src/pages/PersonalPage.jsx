@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { User, Mail, ExternalLink, GraduationCap, FileText, ArrowRight } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { personalInfo } from "../data/siteData";
+import CPS2RL from "../assets/cps2rl.png";
+import WSU from "../assets/wsu.gif";
+import Fatin from "../assets/fatin.jpg";
 
 export default function PersonalPage() {
   return (
@@ -48,7 +51,7 @@ export default function PersonalPage() {
             </a>
 
             <a
-              href="#"
+              href={`${personalInfo.links[3].href}`}
               className="rounded-full border border-slate-300 px-5 py-3 text-sm text-slate-800"
             >
               <span className="inline-flex items-center">
@@ -65,7 +68,9 @@ export default function PersonalPage() {
           transition={{ duration: 0.45, delay: 0.08 }}
           className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl"
         >
-          <div className="mb-6 h-72 rounded-[1.5rem] bg-gradient-to-br from-slate-100 via-slate-50 to-slate-200" />
+          <div className="mb-6 w-full h-auto ">
+            <img src={Fatin} alt="Fatin" className="rounded-lg" />
+          </div>
           <div className="space-y-4">
             <div>
               <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
@@ -92,15 +97,16 @@ export default function PersonalPage() {
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
           <SectionHeading
             eyebrow="Background"
-            title="A short introduction"
-            description="Use this space for your education, interests, and the story behind your work."
-          />
+            title="Hi, I'm Fatin."          />
           <div className="mt-6 flex items-start gap-3 rounded-2xl bg-slate-50 p-4">
-            <GraduationCap className="mt-1 h-5 w-5 text-slate-500" />
+            <GraduationCap className="mt-1 h-20 w-20 text-slate-500" />
             <p className="text-sm leading-7 text-slate-600">
-              Add a few sentences here about your background, current
-              affiliation, and the communities or disciplines you work across.
+              {personalInfo.background}
             </p>
+          </div>
+          <div className="mt-2 flex justify-center items-center gap-20">
+            <img src={WSU} alt="WSU" className="w-24 h-auto rounded-lg" />
+            <img src={CPS2RL} alt="CPS2RL" className="w-24 h-auto rounded-lg" />
           </div>
         </div>
 
@@ -108,7 +114,6 @@ export default function PersonalPage() {
           <SectionHeading
             eyebrow="Links"
             title="Find me elsewhere"
-            description="Replace these placeholders with your actual profiles and documents."
           />
           <div className="mt-6 grid gap-3">
             {personalInfo.links.map((link) => (

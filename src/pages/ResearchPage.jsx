@@ -12,14 +12,10 @@ export default function ResearchPage() {
         transition={{ duration: 0.45 }}
         className="space-y-6"
       >
-        <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-sm text-slate-600 shadow-sm">
-          <FlaskConical className="h-4 w-4" />
-          Research
-        </div>
+
 
         <SectionHeading
-          eyebrow="Overview"
-          title="Questions, themes, and publications"
+          title="Questions and publications"
           description={research.intro}
         />
       </motion.section>

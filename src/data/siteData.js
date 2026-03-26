@@ -12,10 +12,11 @@ export const personalInfo = {
     { label: "CV", href: "https://drive.google.com/file/d/10zr6JBfXT-00Vo4kamdGPLKkt8U9brao/view?usp=sharing" },
   ],
   highlights: [
-    "Research focus on your field or long-term interests",
-    "Experience across academia, industry, or independent work",
+    "Research and develop systems in long terms",
+    "Experience in managing servers in production, test and disaster recovery environment",
     "Interested in collaboration, writing, and open knowledge",
   ],
+  background: "I am a computer science Ph.D. student at Washington State University (WSU). I am a Research Assistant at the Cyber-Physical Systems Security Research Laboratory (CPS2RL), WSU. My research interests include cyber-physical systems and machine learning.",
 };
 
 export const research = {
@@ -25,39 +26,39 @@ export const research = {
     {
       title: "Research Theme One",
       description:
-        "Describe a major line of inquiry here. Summarize the core problem, why it matters, and the methods you use.",
+        "The use of IoT in everyday life leads unutilized of the resources around. Executing DNN in one IoT device may increase WCET of the system. Distributing the workload among unitilized decives can reduce the WCET as well as increase the utilization.",
     },
     {
       title: "Research Theme Two",
       description:
-        "Use this section for another area of focus, such as applied work, interdisciplinary collaborations, or long-term projects.",
+        "Autonomous Driving need to perform sensing, control task. Adding a reasoning layer increases the execution time and reduce the safety.",
     },
     {
       title: "Research Theme Three",
       description:
-        "Add a third theme for breadth: theory, experiments, systems, policy, design, or any other dimension of your research.",
+        "Microcontrollers have limited compute resource and not able to perform the heavy DNN operations. Often powerful models are quantized or pruned to run in a resource constrained setup. Can we execute a full DNN model in a low power MCU.",
     },
   ],
   publications: [
     {
       title: "Paper Title or Preprint Name",
-      venue: "Conference / Journal / Year",
+      venue: "RTSS BP 2025",
       summary:
-        "A one- or two-line description of the contribution and why it matters.",
+        "Distributed Inference",
       href: "#",
     },
     {
-      title: "Another Project or Publication",
-      venue: "Workshop / Lab / Year",
-      summary:
-        "A concise summary that makes the work approachable for a broad audience.",
-      href: "#",
-    },
-    {
-      title: "Ongoing Research Project",
+      title: "Survey of real-time deep neural network",
       venue: "In progress",
       summary:
-        "Briefly describe what you are currently exploring and what questions remain open.",
+        "Review of existing papers",
+      href: "#",
+    },
+    {
+      title: "Distributed DNN",
+      venue: "In progress",
+      summary:
+        "Workload partitioning",
       href: "#",
     },
   ],
