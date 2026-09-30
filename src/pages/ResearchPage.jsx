@@ -19,7 +19,7 @@ export default function ResearchPage() {
         // space-y-6: adds vertical spacing between children
         className="space-y-6"
       >
-        <SectionHeading title="Questions and publications" />
+        <SectionHeading title="Research questions" />
       </motion.section>
 
       {/* Research themes */}
